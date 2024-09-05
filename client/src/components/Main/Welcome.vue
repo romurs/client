@@ -1,14 +1,6 @@
 <script setup lang="ts">
-import { useUserIsAuth } from '@/stores/userIsAuth';
-import { useRouter } from 'vue-router';
-const userAuthStore = useUserIsAuth()
-const router = useRouter()
+import PlayBtn from './PlayBtn.vue';
 
-function startPlay(){
-  if(userAuthStore.userIsAuth){
-    router.push('/game')
-  }
-}
 </script>
 
 <template>
@@ -27,13 +19,7 @@ function startPlay(){
                 <h1 class="text-h5 font-weight" >Добро пожаловать в</h1>
                 <h1 class="text-h3 font-weight-bold">Судоку</h1>
                 <v-container class="mt-10 mx-auto">
-                  <v-btn
-                    rounded
-                    color="success"
-                    size="x-large"
-                    :onclick="startPlay"
-                  >Игать</v-btn>
-                  <br>
+                  <PlayBtn/>
                 </v-container>
               </div>
             </v-container> 
