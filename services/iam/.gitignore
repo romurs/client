@@ -1,0 +1,6 @@
+database/data
+database/pgadmin
+generated/*
+.env
+.vscode
+*.key
