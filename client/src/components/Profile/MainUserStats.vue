@@ -41,7 +41,7 @@ const userInfoStore = useUserInfo()
 </template>
 
 <style scoped lang="scss">
-.userInfo b{
+.userInfo b {
   color: #e7e5e5;
   margin-right: 5px;
   letter-spacing: 1px;
